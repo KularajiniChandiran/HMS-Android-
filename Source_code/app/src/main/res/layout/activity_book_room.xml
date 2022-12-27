@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/check5"
+    tools:context="com.example.asus.hotelmanagement.BookRoom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/teqhotel"
+            android:id="@+id/textViewTeq"
+            android:textColor="#ffffff"
+            android:gravity = "center"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/enter_no"/>
+
+    <EditText
+        android:layout_margin="15dp"
+        android:id="@+id/editTextAdultsNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:hint="@string/adultsno"/>
+
+    <EditText
+        android:layout_margin="15dp"
+        android:id="@+id/editTextChildrenNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:hint="@string/childrenno"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:id="@+id/buttonReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="@string/reserve" />
+
+        <Button
+            android:layout_marginLeft="50dp"
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="@string/cancel" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

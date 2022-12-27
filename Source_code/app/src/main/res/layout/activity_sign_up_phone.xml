@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.hotelmanagement.SignUpPhone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/teqhotel"
+            android:id="@+id/textViewTeq"
+            android:textColor="#ffffff"
+            android:gravity = "center"
+            android:textSize="20dp"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_margin="15dp"
+            android:textSize="24sp"
+            android:id="@+id/textViewPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="@string/phone"/>
+
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/editTextPhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:hint="@string/phone1" />
+
+        <EditText
+            android:layout_margin="15dp"
+            android:id="@+id/editTextPhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:inputType="number"
+            android:hint="@string/phone2" />
+
+        <Button
+            android:layout_margin="15dp"
+            android:id="@+id/buttonNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:text="@string/next" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

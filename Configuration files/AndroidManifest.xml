@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.hotelmanagement">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/teqhotel"
+        android:label="@string/teqhotel"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp"/>
+        <activity android:name=".GuestLogin" android:screenOrientation="portrait"/>
+        <activity android:name=".AdminPage" android:screenOrientation="portrait"/>
+        <activity android:name=".SignUpBirthday" />
+        <activity android:name=".SignUpAddress" />
+        <activity android:name=".SignUpGender" />
+        <activity android:name=".SignUpPhone" />
+        <activity android:name=".SignUpEmail" />
+        <activity android:name=".SignUpPassword" />
+        <activity android:name=".GuestDetail" />
+        <activity android:name=".RoomEntry" android:screenOrientation="portrait"/>
+        <activity android:name=".AllRoomDetails" />
+        <activity android:name=".AvailableRoomDetails" />
+        <activity android:name=".StaffEntry" android:screenOrientation="portrait"/>
+        <activity android:name=".ViewStaff" />
+        <activity android:name=".RemoveStaff" />
+        <activity android:name=".ViewStaff2" />
+        <activity android:name=".Service" />
+        <activity android:name=".RequestService" />
+        <activity android:name=".ReceptionistPage" />
+        <activity android:name=".AddStaff" />
+        <activity android:name=".UpdateStaff" />
+        <activity android:name=".UpdateStaffDetail" />
+        <activity android:name=".SetRoomRate" />
+        <activity android:name=".CancelBooking" android:screenOrientation="portrait"/>
+        <activity android:name=".GuestAvailableRoom" />
+        <activity android:name=".BookRoom" />
+        <activity android:name=".AdminMessage" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:name=".GuestMessage" android:noHistory="true" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

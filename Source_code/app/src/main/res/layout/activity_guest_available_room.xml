@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.hotelmanagement.GuestAvailableRoom">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/teqhotel"
+        android:id="@+id/textViewTeq"
+        android:textColor="#ffffff"
+        android:gravity = "center"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:id="@+id/textViewAvailable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center"
+        android:text="@string/available_rooms"
+        android:background="#d3d3d3"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="74dp"
+        android:id="@+id/recyclerView"
+        android:background="#ADD8E6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
